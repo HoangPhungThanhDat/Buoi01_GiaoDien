@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Đăng ký thành viên</title>
+</head>
+<body>
+    <style>
+        body {
+          font-family: Arial, sans-serif;
+          margin: 0;
+          padding: 0;
+          background-color: #f0f0f0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100vh;
+        }
+        form {
+          background-color: #fff;
+          padding: 50px;
+          border-radius: 5px;
+          box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+        }
+        input[type="text"], input[type="password"], input[type="email"] {
+          width: 100%;
+          padding: 10px;
+          margin-bottom: 10px;
+          border-radius: 5px;
+          border: 1px solid #ccc;
+        }
+        input[type="submit"] {
+          padding: 10px 20px;
+          border-radius: 5px;
+          border: none;
+          color: #fff;
+          background-color: #007BFF;
+        }
+      </style>
+ 
+  <form action="/submit_registration" method="post">
+    <label for="username">Tên đăng nhập:</label><br>
+    <input type="text" id="username" name="username"><br>
+    <label for="password">Mật khẩu:</label><br>
+    <input type="password" id="password" name="password"><br>
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email"><br>
+    <input type="submit" value="Đăng ký">
+  </form>
+</body>
+</html>
